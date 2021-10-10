@@ -22,6 +22,7 @@ repositories {
 dependencies {
     testImplementation(kotlin("test"))
     implementation(compose.desktop.currentOs)
+    testImplementation(compose("org.jetbrains.compose.ui:ui-test-junit4"))
     implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version")
     testImplementation ("org.spekframework.spek2:spek-dsl-jvm:$spek_version")
     testRuntimeOnly ("org.spekframework.spek2:spek-runner-junit5:$spek_version")
